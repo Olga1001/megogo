@@ -1,0 +1,151 @@
+@import "fonts"
+@import "vars"
+
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  appearance: none
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+  text-decoration: none
+a[href^="tel"]
+  color: inherit
+  text-decoration: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  position: relative
+  font-family: "sf-ui-display-regular", sans-serif
+  line-height: 20px
+  color: $color1
+  background: $bg
+.wrap
+  display: block
+  max-width: 767px
+  margin: 0 auto
+img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+.container
+  padding: 15px 25px 15px 50px
+section
+  outline: none
+  overflow: hidden
+input, textarea
+  border: none
+  outline: none
+
+button
+  cursor: pointer
+  outline: none
+  border: none
+  background: none
+.header
+  position: absolute
+  left: 0
+  top: 0
+.burger
+  position: relative
+  width: 46px
+  height: 42px
+  &-line
+    width: 16px
+    height: 2px
+    position: absolute
+    left: 50%
+    background: $color1
+    border-radius: 2px
+    transition: all 0.3s ease
+    transform: translateX(-50%)
+  &.active
+    .burger-top
+      top: 50%
+      transform: translate(-50%, -50%) rotate(-225deg)
+    .burger-center
+      opacity: 0
+    .burger-bottom
+      top: 50%
+      transform: translate(-50%, -50%) rotate(225deg)
+  &-top
+    top: 15px
+  &-center
+    top: 50%
+    transform: translate(-50%, -50%)
+  &-bottom
+    bottom: 15px
+
+.title
+  @include text-30-bold
+  color: $color1
+  margin-bottom: 10px
+.text-16
+  @include text-16-regular
+  @include properties-text
+.title2
+  @include text-24-bold
+.title3
+  @include text-36-bold
+.btn
+  @include text-11-semibold
+  color: $color1
+  background: #23C3B2
+  border-radius: 5px
+  padding: 21px 54px
+  display: inline-block
+  margin-bottom: 20px
+.more
+  @include text-11-semibold
+  color: #E5E5E5
+  display: block
+  text-align: left
+.stock
+  font-size: 12px
+  line-height: 14px
+  letter-spacing: 0.833333px
+  text-transform: capitalize
+  color: rgba(255, 255, 255, 0.6)
+  margin: -10px 0 20px
+.nowrap
+  white-space: nowrap
+@import "../components/pages/home/style"
+
+@import "media"
+// Всегда в конце

@@ -1,0 +1,178 @@
+.offer
+  background: $bg url("../img/img_1.png") no-repeat center / cover
+  width: 100%
+  position: relative
+  &__down
+    position: absolute
+    left: 50%
+    bottom: 0
+    padding: 25px
+    transform: translateX(-50%)
+    &-icon
+      width: 15px
+      height: auto
+.content
+  position: relative
+  z-index: 2
+.second
+  &__desktop
+    position: relative
+    margin-top: 8.7vh
+    margin-bottom: 10vh
+    width: 100%
+    height: 304px
+    &:before
+      @include before
+      top: calc(100% - 29px)
+      z-index: 1
+      background: radial-gradient(50% 100% at 49.51% -0.97%, rgba(151, 151, 151, 0.74) 0%, rgba(196, 196, 196, 0) 100%)
+      opacity: 0.5
+      height: 96px
+      right: -25px
+      left: auto
+      width: 325px
+    &-item
+      position: absolute
+      right: -25px
+      width: 325px
+      height: 100%
+      background: url("../img/desktop.svg") no-repeat left center / contain
+      padding: 7px 0 29px 4px
+      z-index: 2
+    &-img
+      object-fit: cover
+.third
+  &__mobile
+    background: url("../img/mobile.svg") no-repeat center bottom / cover
+    width: calc(42vh + 12px)
+    padding: 3.15vh 3.45vh 0 3.45vh
+    position: relative
+    margin: 4.35vh auto 0
+    &:before
+      @include before
+      bottom: 0
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
+      height: 100%
+    &-img
+      object-fit: cover
+      border-radius: 24px 24px 0 0
+  &-padding
+    padding: 0 25px 0 50px
+  .container, .fp-tableCell
+    vertical-align: bottom
+    padding: 15px 0 0 0
+.fourth
+  background: linear-gradient(rgba(#101010, 0.5)), url("../img/channels.png") no-repeat center top / cover
+  position: relative
+  &:before
+    @include before
+    bottom: 0
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%)
+    height: 100%
+    z-index: 0
+  &-text
+    letter-spacing: 0.5px
+    opacity: 1
+  &-title2
+    letter-spacing: 1px
+    margin-top: 5px
+  &__content
+    &-item
+      &:nth-child(2)
+        margin: 20vh 0 11vh
+.fifth
+  background: linear-gradient(rgba(#101010, 0.5)), url("../img/img_4.png") no-repeat center top / cover
+  .fp-tableCell
+    border: 8px solid #23C3B2
+    box-sizing: border-box
+    position: relative
+    &:before
+      @include before
+      bottom: 0
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%)
+      height: 100%
+      z-index: 0
+  &__content-item:nth-child(2)
+    margin: 15vh 0 6vh
+.sixth
+  background: linear-gradient(rgba(#101010, 0.5)), url("../img/img_5.png") no-repeat center top / cover
+  position: relative
+  &:before
+    @include before
+    bottom: 0
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.83) 100%)
+    opacity: 0.5
+    height: 100%
+    z-index: 0
+  &__content-item:nth-child(2)
+    margin: 15vh 0 6vh
+.seventh
+  &__gadgets
+    position: relative
+    height: 324px
+    margin-right: -25px
+    margin-top: 8.7vh
+    width: 100%
+    img
+      object-fit: cover
+      z-index: -1
+      position: relative
+  &__desktop
+    position: absolute
+    top: 0
+    right: -25px
+    width: 325px
+    height: 304px
+    background: url("../img/desktop.svg") no-repeat left center / contain
+    padding: 8px 0 29px 4px
+  &__laptop
+    background: url("../img/laptop.svg") no-repeat left center / contain
+    width: 171px
+    height: 126px
+    padding: 9px 0 13px 25px
+    position: absolute
+    right: -25px
+    bottom: 0
+    z-index: 1
+  &__mobile
+    background: url("../img/mob.svg") no-repeat left center / contain
+    position: absolute
+    right: 105px
+    bottom: 0
+    z-index: 3
+    width: 46px
+    height: 90px
+    padding: 4px
+    img
+      border-radius: 7px
+.eight
+  &-container
+    padding: 15px
+  .content
+    padding: 0 25px 0 50px
+  &__gifts
+    margin-top: 9px
+    position: relative
+    &:before
+      @include before
+      height: 80%
+      bottom: 0
+      background: linear-gradient(179.86deg, rgba(16, 16, 16, 0) 37.5%, #101010 90.39%)
+
+.ninth
+  &-row
+    display: flex
+    flex-wrap: wrap
+    margin-top: 30px
+  &__item
+    width: 50%
+    margin-bottom: 40px
+    &-text
+      font-family: "sf-ui-display-bold", sans-serif
+      font-size: 20px
+      line-height: 24px
+      color: $color1
+    &-span
+      font-size: 14px
+      display: block
+      font-family: "sf-ui-display-regular", sans-serif
