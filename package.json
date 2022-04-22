@@ -34,7 +34,7 @@
     "less-plugin-sass2less": "^1.2.0"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "gulp-cli": "^2.0.1",
     "gulp-less": "^4.0.1",
     "gulp-less2sass": "0.0.2",
